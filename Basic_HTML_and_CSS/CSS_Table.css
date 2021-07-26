@@ -1,0 +1,15 @@
+table {
+border: 1px blue;
+}
+td:hover {
+background-color: red;
+color: green;
+}
+tr, th {
+	background-color: grey;
+	color: orange;
+}
+tr, td {
+	background-color: blue;
+	color: red;
+}
