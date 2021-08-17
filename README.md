@@ -15,3 +15,6 @@ This is a display of sample websites I've made using HTML and CSS.
 <br>
 # <h3>My Portfolio</h3>
 This page is an example home page for My Porfolio. It styled using CSS and includes a video, navbar and footer.
+<br>
+# <h3>Academy Cinemas</h3>
+This page is an example home page of a movie theater that is styles using Bootstrap 4. It contains Bootsrap components like a jumbotron, form, navbar, cards and dropdowns.
