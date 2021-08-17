@@ -18,3 +18,6 @@ This page is an example home page for My Porfolio. It styled using CSS and inclu
 <br>
 # <h3>Academy Cinemas</h3>
 This page is an example home page of a movie theater that is styles using Bootstrap 4. It contains Bootsrap components like a jumbotron, form, navbar, cards and dropdowns.
+<br>
+# <h3>The Space Station</h3>
+This page is an exapmle home page for a Space expolration company. It's styled using CSS and a navbar, image container, a form and a footer.
