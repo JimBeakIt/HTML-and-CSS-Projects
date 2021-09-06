@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf=8">
+<meta content="width=device-width,initial-scale=1">
 <title>Cars!</title>
 </head>
 <link rel = "stylesheet" type = "text/css" href ="./CSS/one_page_website.css">
+<script src="./JS/one_page_website.js"></script>
 <body>
 
 <!-- NAV -->
@@ -30,49 +32,59 @@
 </div>
 <!-- END HOME -->
 
-<!-- PICTURES -->
-<section>
-<div id="pictures">
-<h3>Pictures</h3>
-<div class="flex-container">
+<h2 style="text-align:center">Lightbox</h2>
 
-<!-- PHOTO-CONTAINER 1 -->
-<div class="photo-container">
-<div class="photo">
-<img src="car_1.png" alt="Ford Fiesta">
-<div class="photo-overlay">
-<p>Ford Fiesta</p>
+<div class="row">
+  <div class="column">
+    <img src="car_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="car_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="car_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
 </div>
-</div>
-</div>
-<!-- END PHOTO-CONTAINER 1 -->
 
-<!-- PHOTO-CONTAINER 2 -->
-<div class="photo-container">
-<div class="photo">
-<img src="car_2.png" alt="VW Golf">
-<div class="photo-overlay">
-<p>VW Golf</p>
-</div>
-</div>
-</div>
-<!-- END PHOTO-CONTAINER 2 -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-<!-- PHOTO-CONTAINER 3 -->
-<div class="photo-container">
-<div class="photo">
-<img src="car_3.png" alt="Vauxhall Corsa">
-<div class="photo-overlay">
-<p>Vauxhall Corsa</p>
-</div>
-</div>
-</div>
-<!-- END PHOTO-CONTAINER 3 -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="car_1.png" style="width:100%">
+    </div>
 
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="car_2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="car_3.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="car_1.png" style="width:100%" onclick="currentSlide(1)" alt="Ford Fiesta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="car_2.png" style="width:100%" onclick="currentSlide(2)" alt="VW Golf">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="car_3.png" style="width:100%" onclick="currentSlide(3)" alt="Vauxhall Corsa">
+    </div>
+  </div>
 </div>
-</div>
-</section>
-<!-- END PICTURES -->
+
 
 <!-- VIDEOS -->
 <section>
